@@ -20,10 +20,11 @@
   --line-soft:rgba(13,18,16,.07);
 
   /* --- Type --- */
-  --f-display:'Space Grotesk', sans-serif;
-  --f-serif:'Instrument Serif', serif;
-  --f-body:'Inter', sans-serif;
-  --f-mono:'JetBrains Mono', monospace;
+  --f-display:'Outfit', sans-serif;           /* nav, buttons, logo, big numbers */
+  --f-heading:'Cormorant Garamond', serif;    /* all headings */
+  --f-serif:'Cormorant Garamond', serif;      /* gold italic accent words */
+  --f-body:'Outfit', sans-serif;              /* paragraphs, forms */
+  --f-mono:'Outfit', sans-serif;              /* small uppercase labels, captions */
 
   --container:1280px;
   --pad: clamp(24px, 5vw, 64px);
@@ -78,7 +79,7 @@ section.paper{background:var(--paper);}
 section.white{background:var(--white);}
 
 /* --- Type scale --- */
-h1,h2,h3,h4{font-family:var(--f-display);font-weight:600;line-height:1.02;letter-spacing:-.02em;}
+h1,h2,h3,h4{font-family:var(--f-heading);font-weight:500;line-height:1.1;letter-spacing:-.01em;}
 h1{font-size:clamp(2.6rem,6.4vw,5.6rem);}
 h2{font-size:clamp(2rem,4.4vw,3.4rem);}
 h3{font-size:1.35rem;}
@@ -119,7 +120,11 @@ section.dark .kicker, section.forest .kicker{color:var(--gold-soft);}
 .btn-gold{--btnColor:var(--gold);background:var(--gold);color:var(--ink);}
 .btn-gold::before{background:var(--ink);}
 .btn-gold:hover{color:var(--cream);}
-.btn-ghost{--btnColor:currentColor;}
+.btn-ghost{--btnColor:var(--ink);}
+
+/* outlined buttons sitting on dark backgrounds */
+.dark .btn-ghost, .forest .btn-ghost, .site-footer .btn-ghost, .mobile-menu .btn-ghost{--btnColor:var(--cream);}
+.dark .btn-ghost:hover, .forest .btn-ghost:hover, .site-footer .btn-ghost:hover, .mobile-menu .btn-ghost:hover{color:var(--ink) !important;}
 .btn svg{width:16px;height:16px;transition:transform .3s ease;}
 .btn:hover svg{transform:translate(3px,-3px);}
 
@@ -284,7 +289,7 @@ section.dark .kicker, section.forest .kicker{color:var(--gold-soft);}
 .cursor-dot,.cursor-ring{position:fixed;top:0;left:0;pointer-events:none;z-index:9998;border-radius:50%;transform:translate(-50%,-50%);}
 .cursor-dot{width:6px;height:6px;background:var(--gold);}
 .cursor-ring{width:34px;height:34px;border:1.5px solid rgba(13,18,16,.4);transition:width .25s,height .25s,border-color .25s,background .25s;}
-.cursor-ring.hover{width:60px;height:60px;background:rgba(217,169,78,.15);border-color:var(--gold);}
+.cursor-ring.hover{width:48px;height:48px;background:transparent;border-color:var(--gold);}
 @media (hover:none), (pointer:coarse){.cursor-dot,.cursor-ring{display:none;}}
 
 /* --- Progress bar --- */

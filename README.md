@@ -8,7 +8,7 @@ nonprofit in Okeho, Oyo State, Nigeria.
 - Plain HTML5, CSS3, vanilla JavaScript — no build step, no framework, no npm install required.
 - [GSAP](https://gsap.com/) + ScrollTrigger (via CDN) — scroll reveals, hero text animation, magnetic buttons, count-up stats, page-transition curtain.
 - [Swiper.js](https://swiperjs.com/) (via CDN) — testimonial and speaker carousels.
-- Google Fonts: Space Grotesk, Instrument Serif, Inter, JetBrains Mono.
+- Google Fonts: Cormorant Garamond, Outfit.
 
 All libraries load from CDN in the `<head>`/before `</body>` of each page, so there is
 nothing to install locally.
@@ -39,6 +39,7 @@ ofma-website/
 ├── sponsor.html          Sponsor Us (giving levels, budget, scholar sponsorship)
 ├── donate.html            Donate (bank transfer details + form)
 ├── contact.html            Contact (details + message form)
+├── get-involved.html       Get Involved (give, volunteer, sponsor, partner a school)
 ├── css/
 │   └── style.css        Full design system — colors, type, components, motion
 ├── js/
@@ -54,8 +55,8 @@ ofma-website/
 - **Colors**: deep forest green (`--forest`, `--forest-deep`) + gold (`--gold`,
   `--gold-soft`) + warm cream/paper backgrounds + a terracotta accent — evokes
   Islamic art and the organisation's existing green/maroon branding, elevated.
-- **Type**: Space Grotesk (headings, UI), Instrument Serif italic (accent words),
-  Inter (body copy), JetBrains Mono (labels/kickers/numbers).
+- **Type**: Cormorant Garamond (headings and gold italic accent words), Outfit
+  (navigation, buttons, body copy, small labels).
 - **Motif**: an 8-point geometric star (khatam-inspired) used as a faint rotating
   hero background and as bullet marks in the marquee.
 - **Motion**: page-load/exit curtain transition between pages, staggered
